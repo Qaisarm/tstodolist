@@ -14,7 +14,7 @@ const InputFeild = ({todo, setTodo, handleAdd}: Props)=> {
       inputRef.current?.blur();
     }}>
         <input 
-        ref = {inputRef} type= 'input' placeholder=' Enter a task' className='input_box'
+        ref = {inputRef} type= 'input' placeholder=' Enter a new task' className='input_box'
         value={todo}
         onChange ={(e) => setTodo(e.target.value)}/>
         <button className='input_submit' type='submit'> Go</button>
